@@ -1,0 +1,29 @@
+{
+  "name": "secutorsd",
+  "version": "1.0.0",
+  "description": "SECUTOR SD WEBSITE My Second Project HTML, CSS, JavaScript, Grunt, Less, Git, NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevans93/secutorSD.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevans93/secutorSD/issues"
+  },
+  "homepage": "https://github.com/stevans93/secutorSD#readme",
+  "devDependencies": {
+    "grunt": "^1.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-express": "^1.4.1"
+  }
+}
