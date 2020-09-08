@@ -1,0 +1,36 @@
+/* Reusable */
+.container {
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.sectionHeading {
+    text-align: center;
+    margin-bottom: 10rem;
+
+    h2 {
+        font-size: 5rem;
+        color: rgba(255,255,255, .6);
+        text-transform: uppercase;
+        font-weight: 300;
+        position: relative;
+        margin-bottom: 1rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(218, 0, 36, 0.7);
+            width: 10rem;
+            height: 3px;
+            border-radius: .8rem;
+        }
+    }
+}
+.hasMarginRight {
+    margin-right: 25rem;
+}

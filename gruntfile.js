@@ -20,19 +20,10 @@ module.exports = function(grunt) {
                    paths: ['less/']
                },
                files: {
-                   "css/style.css" : "less/*.less"
+                   "css/style.css" : "less/main.less"
                }
            }
        },
-
-       // Uglify
-       uglify: {
-        build: {
-          files: {
-            'build/js/script.js' : 'build/js/script.js'
-          }
-        }
-      },
 
       //HTML Min
       htmlmin: {                                     
@@ -91,15 +82,12 @@ module.exports = function(grunt) {
     // Load Plugins
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-express');
 
     //Register Tasks
-    grunt.registerTask('concat-js', ['concat:js']);
-    grunt.registerTask('concat-css', ['concat:css']);
-    grunt.registerTask('imgmin', ['imagemin']);
+    grunt.registerTask('all', ['concat:js', 'concat:css', 'less', 'htmlmin', 'imagemin']);
     grunt.registerTask('server', ['express', 'watch']);
 };
