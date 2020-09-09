@@ -4,11 +4,11 @@ module.exports = function(grunt) {
         // Concat Files
         concat: {
             js: {
-                src: ['./js/**/*.js'],
+                src: ['./js/*.js'],
                 dest: 'build/js/script.js'
             },
             css: {
-                src: ['./css/**/*.css'],
+                src: ['./css/*.css'],
                 dest: 'build/css/style.css'
             }
         },
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                    paths: ['less/']
                },
                files: {
-                   "css/style.css" : "less/main.less"
+                   "css/style.css" : "less/*.less"
                }
            }
        },
@@ -88,6 +88,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-express');
 
     //Register Tasks
-    grunt.registerTask('all', ['concat:js', 'concat:css', 'less', 'htmlmin', 'imagemin']);
+    grunt.registerTask('all', ['less', 'concat:js', 'concat:css', , 'htmlmin', 'imagemin']);
     grunt.registerTask('server', ['express', 'watch']);
 };

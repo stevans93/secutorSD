@@ -1,0 +1,43 @@
+/* Side Bar */
+.leftSide {
+    position: fixed;
+    top: 30%;
+    margin-left: 1px;
+    z-index: 2;
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style-type: none;
+        padding: 20px;
+        color: white;
+        position: relative;
+        background: #7e0015b9;
+        margin-bottom: 1px;
+    }
+    li i {
+        font-size: 20px;
+    }
+  }
+  .icon:hover {
+    animation: toBottomFromTop .6s forwards;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    padding: 15px;
+    margin: -15px;
+  }
+  .leftSide li:hover {
+    background-color: #da0024;
+  }
+  @keyframes toBottomFromTop {
+      0% {
+      transform: translateY(0%);
+      }
+      50% {
+          opacity: 0;
+          transform: translateY(35%);
+      }
+      51% {
+          transform: translateY(-50%);
+      }
+  }
