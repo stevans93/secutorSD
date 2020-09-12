@@ -88,6 +88,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-express');
 
     //Register Tasks
-    grunt.registerTask('all', ['less', 'concat:js', 'concat:css', 'htmlmin', 'imagemin']);
+    grunt.registerTask('all', ['concat:js', 'less', 'concat:css', 'htmlmin', 'imagemin']);
     grunt.registerTask('server', ['express', 'watch']);
 };
