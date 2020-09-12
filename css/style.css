@@ -150,7 +150,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.topNav .open {
+.topNav.open {
   top: 0;
   border-radius: initial;
 }
@@ -167,7 +167,7 @@ header {
   z-index: 1500;
   transition: transform 650ms ease-out;
 }
-.menuToggler .open {
+.menuToggler.open {
   transform: rotate(-45deg);
 }
 .bar {
@@ -176,22 +176,22 @@ header {
   height: 4px;
   border-radius: 0.8rem;
 }
-.bar .half {
+.bar.half {
   width: 50%;
 }
-.bar .start {
+.bar.start {
   transform-origin: right;
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
-.open .bar .start {
+.open .bar.start {
   transform: rotate(-450deg) translateX(0.8rem);
 }
-.bar .end {
+.bar.end {
   align-self: flex-end;
   transform-origin: left;
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
-.open .bar .end {
+.open .bar.end {
   transform: rotate(-450deg) translateX(-0.8rem);
 }
 .imgClass img {
